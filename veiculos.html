@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiculos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/veiculos.css">
+    <!-- <link rel="stylesheet" href="estilos/mobile-home.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    
+    <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+
+    <style>
+        @media only screen and (max-width: 768px){
+            header {
+            display: block;
+            width: 100%;
+            background-color: black;
+            
+        }
+
+        #mobile-nav{
+            display: block;
+            color: white;
+            font-size: 0.5em;
+            margin-left: 10px;
+            
+        }
+        #mobile-nav>h1{
+            color: white;
+            text-align: left;
+        }
+        #mobile-nav>h1>span {
+            float: left;
+            margin-right: 10px;
+            font-size: 2.5em;
+            
+        }
+        #bemvindos{
+            visibility: hidden;
+            height: 30px;
+        }
+
+        #h1encontre {
+            
+            display: block;
+            width: auto;
+            margin-top: 35px;
+            text-align: center;
+            color: white;
+        }
+        #menuIcon {
+            /* display: inline-block; */
+        }
+
+        .material-symbols-outlined:hover {
+            cursor: pointer;
+
+        }
+        #menuList{
+            display: none;
+            margin: 0;
+            border-radius: 10px;
+            width: 100%;
+        }
+        #menuList ul li a {
+            display: block;
+            padding: 10px;
+            
+        }
+        .gallery {
+            width: 378px;
+        }
+        #destk-home{
+            display: none;
+        }
+        #secao3 > div {
+            width: 50%;
+            margin: 10px;
+            
+        }
+        #link-redes{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #redes a{
+            margin: 5px;
+        }
+        }
+
+    </style>
+    
+</head>
+<body onresize="setDisplay()">
+
+    <header>
+        <div id="mobile-nav">
+            <span id="menuIcon" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+            <h1><span class="vgr">VGR</span>&nbsp &nbsp Veículos</h1>
+                <hr id="hr">
+        </div>
+        
+        <nav id="menuList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="veiculos.html">Veículos</a></li>
+                <li><a href="ficha.html">Ficha Compra/Venda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="h1encontre">Encontre seu carro aqui!</h1>
+    <section id="grade-veiculos">
+        <div id="frame1" onclick="" class="gallery">
+            <img src="images/bmw20-378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+                Automatico 72.085km<br>
+                
+                <span class="precio">R$ 62.490</span><br>
+                <span class="corte-preço">R$ 68.990</span>
+            </p>
+        </div>
+        <div id="frame2" onclick="cardetails('car-2')"  class="gallery">
+            <img class="list-of-cars" src="/images/hb20378.png">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame3" onclick="cardetails('car-3')" class="gallery">
+            <img src="/images/destaques/fiesta378x278.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame4" onclick="cardetails('car-4')" class="gallery">
+            <img src="/images/gm378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame5" onclick="cardetails('car-5')" class="gallery">
+            <img src="/images/destaques/fiesta378x278.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame6" onclick="cardetails('car-6')" class="gallery">
+            <img src="/images/bmw20-378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame7" onclick="cardetails('car-7')" class="gallery">
+            <img src="/images/destaques/fiesta378x278.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame8" onclick="cardetails('car-8')" class="gallery">
+            <img src="/images/hb20378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame9" onclick="cardetails('car-9')" class="gallery">
+            <img src="/images/gm378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame10" onclick="cardetails('car-6')" class="gallery">
+            <img src="/images/destaques/fiesta378x278.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame11" onclick="cardetails('car-11')" class="gallery">
+            <img src="/images/bmw20-378.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame12" onclick="cardetails('car-12')" class="gallery">
+            <img src="/images/destaques/fiesta378x278.png" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+    </section>
+
+<section id="secao3">
+    <div class="visite">
+        <h2>Visite-nos</h2>
+        <p>Venha conhecer nossa loja.</p>
+        <p>Rua Abilio Pedro Ramos, 923 - Vila Nilo - São Paulo-SP, 02279-000</p>
+        <p><span class="material-symbols-outlined">
+            phone_in_talk
+            </span> (11) 2023-2715</p>
+        <p><img src="#" alt="">(11) 2638-3928</p>
+        <p><img src="#" alt="">(11) 95328-0431</p>
+    </div>
+    <div class="visite" id="destk-home">
+        <h2>Destaques</h2>
+        <ul>
+            <li>
+                <h3>Jeep Renegade longitude T270</h3>
+                <P>ano modelo cor</P>
+            </li>
+            <li>
+                <h3>Jeep Renegade longitude T270</h3>
+                <P>ano modelo cor</P>
+            </li>
+            <li>
+                <h3>Jeep Renegade longitude T270</h3>
+                <P>ano modelo cor</P>
+            </li>
+            <li>
+                <h3>Jeep Renegade longitude T270</h3>
+                <P>ano modelo cor</P>
+            </li>
+            <li>
+                <h3>Jeep Renegade longitude T270</h3>
+                <P>ano modelo cor</P>
+            </li>
+        </ul>
+    </div>
+    <div id="redes" class="visite">
+        <h2>Redes Sociais</h2>
+        <a target="_blank" href="https://www.instagram.com/veiculosvgr/"><img src="/images/instagram-40P.png" alt=""></a>
+        <a class="testerede" target="_blank" href="https://www.facebook.com/vgrmultimarcas"><img id="imgface" src="/images/facebook-13P.png" alt="facebook icone"></a>
+        <a target="_blank" href="https://wa.me/5511963591532"><img src="/images/whatsapp-33P.png" alt=""></a>
+    </div>
+</section>
+
+<script src="/scripts/veiculoscontrol.js"></script>
+
+<footer>
+    <nav><a href="/">Home</a></nav>
+    <div id="rdape">Desenvolvido por @liveira2023 (11)96359-1532</div>
+</footer>
+<script src="/scripts/menuFuncions.js"></script>
+</body>
+</html>

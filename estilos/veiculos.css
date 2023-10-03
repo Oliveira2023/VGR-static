@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap');
+
+
+h1 {
+text-align: center;
+color: #F7941D;
+}
+#grade-veiculos {
+
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    margin: 10px auto;
+    max-width: 1050px;
+    gap: 8px;
+    justify-content: center;
+}
+.galery {
+    /* width: 250px; */
+}
+#grade-veiculos div > img {
+    /* width: 250px; */
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    }
+
+#grade-veiculos div > p {
+    border-radius: 0px;
+    margin-top: -10px;
+    padding: 10px;
+    
+    font-weight: bold;
+    font-size: 10px;
+    background-color: white;
+    color: rgb(59, 59, 59);
+}
+#grade-veiculos div > p >b {
+    font-size: medium;
+    
+}
+
+    

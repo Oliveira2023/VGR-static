@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
+
+body{
+    min-height: 100vh;
+    background: url('/images/carropreto.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+h1 {
+    text-align: center;
+    color: #005D99;
+    font-size: 1.8em;
+    margin: 10px 0 5px 0;
+    text-shadow: 4px 3px 3px black;
+}
+form {
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px auto 20px auto;
+    background-color: rgba(128, 128, 128, 0.432);
+    width: 60%;
+    text-align: left;
+    border-radius: 10px;
+}
+form div{
+    width: 95%;
+    margin: auto;
+}
+form div input{
+    /* position: absolute; */
+    width: 100%;
+    border-top: none transparent;
+    border-right: none transparent;
+    border-left: none transparent;
+    border-bottom: 1px solid #8e98a2;
+    padding: 10px;
+}
+#msg{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+}
+#submit, #cancel{
+    left: 35px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#submit:hover, #cancel:hover{
+    background-color: rgb(71, 112, 201);
+    
+}
