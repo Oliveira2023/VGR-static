@@ -7,12 +7,12 @@ body{
     background-repeat: no-repeat;
     background-position: bottom;
 }
-h1 {
+#titulo-ficha {
     text-align: center;
     color: #005D99;
     font-size: 1.8em;
     margin: 10px 0 5px 0;
-    text-shadow: 4px 3px 3px black;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.466);
 }
 form {
     min-height: 300px;

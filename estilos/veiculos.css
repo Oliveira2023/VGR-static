@@ -19,9 +19,9 @@ color: #F7941D;
     gap: 8px;
     justify-content: center;
 }
-.galery {
+/* .galery { */
     /* width: 250px; */
-}
+/* } */
 #grade-veiculos div > img {
     /* width: 250px; */
     width: 100%;
@@ -42,6 +42,16 @@ color: #F7941D;
 #grade-veiculos div > p >b {
     font-size: medium;
     
+}
+@media only screen and (max-width: 768px){
+
+    #h1encontre {
+    display: block;
+    width: auto;
+    margin-top: 35px;
+    text-align: center;
+    color: white;
+    }
 }
 
     
