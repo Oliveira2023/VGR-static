@@ -27,19 +27,24 @@
         }
       </style>
 </head>
-<body>
-
+<body onresize="setDisplay()">
+    
     <header>
-    <nav id="menuList">
+        <div id="mobile-nav">
+            <span id="menuIcon" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+            <h1><span class="vgr">VGR</span>&nbsp  &nbspVeículos - Pagina inicial</h1>
+                <hr id="hr">
+        </div>
         
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/localizacao.html">Localização/VS</a></li>
-            <li><a href="/veiculos.html">Veículos</a></li>
-            <li><a href="/ficha.html">Ficha Compra/Venda</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav id="menuList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="veiculos.html">Veículos</a></li>
+                <li><a href="ficha.html">Ficha Compra/Venda</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- <h1>Navegue até a loja</h1> -->
     <p>Estamos a 1 minuto saindo da Fernão Dias</p>
@@ -60,29 +65,10 @@
         <p><img src="#" alt="">(11) 95328-0431</p>
     </div>
     <div class="visite" id="destk-home">
-        <h2>Destaques</h2>
-        <ul>
-            <li>
-                <h3>Jeep Renegade longitude T270</h3>
-                <P>ano modelo cor</P>
-            </li>
-            <li>
-                <h3>Jeep Renegade longitude T270</h3>
-                <P>ano modelo cor</P>
-            </li>
-            <li>
-                <h3>Jeep Renegade longitude T270</h3>
-                <P>ano modelo cor</P>
-            </li>
-            <li>
-                <h3>Jeep Renegade longitude T270</h3>
-                <P>ano modelo cor</P>
-            </li>
-            <li>
-                <h3>Jeep Renegade longitude T270</h3>
-                <P>ano modelo cor</P>
-            </li>
-        </ul>
+        <h2>Saiba Mais</h2>
+        <p>
+            Veículo é uma máquina que transporta pessoas ou carga. Os veículos incluem bicicletas, veículos motorizados, veículos sobre trilhos, embarcações, veículos anfíbios, aeronaves e espaçonaves.
+        </p>
     </div>
     <div id="redes" class="visite">
         <h2>Redes Sociais</h2>
@@ -96,6 +82,6 @@
     <nav><a href="/">Home</a></nav>
     <div id="rdape">Vgr Multimarcas Veiculos Ltda - CNPJ: 19.257.804/0001-07</div>
 </footer>
-
+<script src="./scripts/menuFuncions.js"></script>
 </body>
 </html>
