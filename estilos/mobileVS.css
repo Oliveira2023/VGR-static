@@ -201,5 +201,14 @@ margin: 0px auto;
         margin: 5px 0px;
         
     }
+    #info-aside {
+        background-color: rgb(92, 110, 110);
+        width: 100%;
+        margin: 15px 0;
+    }
+    #info-aside div {
+        width: 95%;
+        margin: 5px auto;
+    }
 
 }

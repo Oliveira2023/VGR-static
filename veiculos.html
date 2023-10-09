@@ -38,25 +38,39 @@
     <h1 id="h1encontre">Encontre seu carro aqui!</h1>
 
     <section id="grade-veiculos">
-        <div id="frame1" onclick="" class="gallery">
-            <img src="./images/bmw20-378.png" alt="">
-            <p class="descrip"><b>Ford FIESTA</b><br>
+        <div id="frame0" onclick="" class="gallery">
+            <img id="img-car0" src="" alt="">
+            <div id="desc-car0" class="descrip">
+                <p id="car0-nome"><b></b></p> 
+                <p id="car0-anoTipo"></p>
+                <p id="car0-cambioKM"></p>
+                <p id="car0-preco" class="precio"></p>
+                <p id="car0-corte-preço" class="corte-preço"></p>
+            </div>
+            <!-- <p class="descrip"><b>Ford FIESTA</b><br>
                 2015 1.6 TI-Flex Titanium<br>
                 Automatico 72.085km<br>
                 
                 <span class="precio">R$ 62.490</span><br>
                 <span class="corte-preço">R$ 68.990</span>
-            </p>
+            </p> -->
         </div>
-        <div id="frame2" onclick="cardetails('car-2')"  class="gallery">
-            <img class="list-of-cars" src="./images/hb20378.png">
-            <p class="descrip"><b>Ford FIESTA</b><br>
+        <div id="frame1" onclick="cardetails('car-2')"  class="gallery">
+            <img id="img-car1" class="list-of-cars" src="">
+            <div id="desc-car1" class="descrip">
+                <p id="car1-nome"><b></b></p>
+                <p id="car1-anoTipo"></p>
+                <p id="car1-cambioKM"></p>
+                <p id="car1-preco" class="precio"></p>
+                <p id="car1-corte-preço" class="corte-preço"></p>
+            </div>
+            <!-- <p class="descrip"><b></b><br>
                 2015 1.6 TI-Flex Titanium<br>
             Automatico 72.085km<br>
                 
                 <span class="precio">R$ 122.490</span><br>
                 <span class="corte-preço">R$ 128.990</span>
-            </p>
+            </p> -->
         </div>
         <div id="frame3" onclick="cardetails('car-3')" class="gallery">
             <img src="./images/destaques/fiesta378x278.png" alt="">
@@ -193,5 +207,6 @@
 <button id="myBtn" title="Go to top">Top</button>
 <script src="./scripts/veiculoscontrol.js"></script>
 <script src="./scripts/menuFuncions.js"></script>
+<script src="./scripts/car.js"></script>
 </body>
 </html>
