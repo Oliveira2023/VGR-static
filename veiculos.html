@@ -205,8 +205,25 @@
     <div id="rdape">Vgr Multimarcas Veiculos Ltda - CNPJ: 19.257.804/0001-07</div>
 </footer>
 <button id="myBtn" title="Go to top">Top</button>
-<script src="./scripts/veiculoscontrol.js"></script>
 <script src="./scripts/menuFuncions.js"></script>
+<script src="./scripts/veiculoscontrol.js"></script>
 <script src="./scripts/car.js"></script>
+<script>
+    var mybutton = document.getElementById("myBtn")
+    window.onscroll = function(){
+    scrollFunction()
+}
+function scrollFunction(){
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+        mybutton.style.display = "block"
+    }else{
+        mybutton.style.display = "none"
+    }
+}
+mybutton.onclick = function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

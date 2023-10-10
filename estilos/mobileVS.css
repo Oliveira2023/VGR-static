@@ -5,16 +5,12 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    
-}
-
-h1 {
+/* h1 {
     
     margin-left: 30px;
     padding: 10px;
     
-}
+} */
 #principalVS{
     display:inline-block;
     width: 100%;

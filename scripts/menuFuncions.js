@@ -1,6 +1,6 @@
 var menuIcon = document.getElementById("menuIcon")
 var menuEl = document.getElementById("menuList")
-var mybutton = document.getElementById("myBtn")
+
 function menuClick(){
     if (menuEl.style.display == "block"){
         menuEl.style.display = "none"
@@ -21,18 +21,4 @@ function setDisplay(){
         hr.style.display = "block"
         menuEl.style.display == "none"
     }
-}
-window.onscroll = function(){
-    scrollFunction()
-}
-function scrollFunction(){
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
-        mybutton.style.display = "block"
-    }else{
-        mybutton.style.display = "none"
-    }
-}
-mybutton.onclick = function(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
