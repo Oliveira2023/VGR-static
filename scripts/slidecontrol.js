@@ -43,6 +43,28 @@ let veiculo1 = {
     thumb5: './images/hb20RodaE600x400.jpg',
     thumb6: './images/hb20Traz600x400.jpg'
 }
+let veiculo0 = {
+    nome: 'BMW X1',
+    km: "38.531",
+    local: "São Paulo",
+    year: 2021,
+    fipe: '167.000,00',
+    valor: '165.199,00',
+    transmissao: 'Transmissão automatica',
+    details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
+    slide1: './images/bmw20-378.png',
+    slide2: './images/bmw20-378.png',
+    slide3: './images/bmw20-378.png',
+    slide4: './images/bmw20-378.png',
+    slide5: './images/bmw20-378.png',
+    slide6: './images/bmw20-378.png',
+    thumb1: './images/bmw20-378.png',
+    thumb2: './images/bmw20-378.png',
+    thumb3: './images/bmw20-378.png',
+    thumb4: './images/bmw20-378.png',
+    thumb5: './images/bmw20-378.png',
+    thumb6: './images/bmw20-378.png'
+}
 
 let veiculoSelecionado = sessionStorage.getItem('carro')
 
@@ -52,6 +74,7 @@ let veiculo = 'veiculo' + nVeiculo
 let imagem = 'imagem' + nVeiculo
 let slide = 'slide' + nVeiculo
 
+if (veiculo=='veiculo0'){veiculo=veiculo0}
 if (veiculo=='veiculo1'){veiculo=veiculo1}
 if (veiculo=='veiculo2'){veiculo=veiculo2}
 if (veiculo=='veiculo3'){veiculo=veiculo3}
