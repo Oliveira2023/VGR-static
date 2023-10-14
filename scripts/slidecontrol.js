@@ -7,18 +7,18 @@ let veiculo2 = {
     valor: "42000,00",
     transmissao: 'Transmissão manual',
     details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
-    slide1: '/images/fiesta20red600x400.jpg',
-    slide2: "/images/fiesta2-600x400.jpg",
-    slide3: "/images/fiesta3-600x400.jpg",
-    slide4: "/images/fiesta2-600x400.jpg",
-    slide5: "/images/fiesta5-600x400.jpg",
-    slide6: "/images/fiesta6-600x400.jpg",
-    thumb1: "/images/fiesta20.jpg",
-    thumb2: "/images/fiesta-frente-dir.jpg",
-    thumb3: '/images/fiesta-frentelateral-esquerda.jpg',
-    thumb4: '/images/fiesta-frente-dir.jpg',
-    thumb5: '/images/fiesta-rodaesquerda.jpg',
-    thumb6: '/images/fiesta-trazeira.jpg'
+    slide1: './images/fiesta20red600x400.jpg',
+    slide2: "./images/fiesta2-600x400.jpg",
+    slide3: "./images/fiesta3-600x400.jpg",
+    slide4: "./images/fiesta2-600x400.jpg",
+    slide5: "./images/fiesta5-600x400.jpg",
+    slide6: "./images/fiesta6-600x400.jpg",
+    thumb1: "./images/fiesta20.jpg",
+    thumb2: "./images/fiesta-frente-dir.jpg",
+    thumb3: './images/fiesta-frentelateral-esquerda.jpg',
+    thumb4: './images/fiesta-frente-dir.jpg',
+    thumb5: './images/fiesta-rodaesquerda.jpg',
+    thumb6: './images/fiesta-trazeira.jpg'
 }
 
 let veiculo1 = {
@@ -30,18 +30,18 @@ let veiculo1 = {
     valor: '65.199,00',
     transmissao: 'Transmissão manual',
     details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
-    slide1: '/images/hb20frente600x400.jpg',
-    slide2: '/images/hb20Painel600x400.jpg',
-    slide3: '/images/hb20LatDir600x400.jpg',
-    slide4: '/images/hb20moto600x400.jpg',
-    slide5: '/images/hb20RodaE600x400.jpg',
-    slide6: '/images/hb20Traz600x400.jpg',
-    thumb1: '/images/hb20frente600x400.jpg',
-    thumb2: '/images/hb20Painel600x400.jpg',
-    thumb3: '/images/hb20LatDir600x400.jpg',
-    thumb4: '/images/hb20moto600x400.jpg',
-    thumb5: '/images/hb20RodaE600x400.jpg',
-    thumb6: '/images/hb20Traz600x400.jpg'
+    slide1: './images/hb20frente600x400.jpg',
+    slide2: './images/hb20Painel600x400.jpg',
+    slide3: './images/hb20LatDir600x400.jpg',
+    slide4: './images/hb20moto600x400.jpg',
+    slide5: './images/hb20RodaE600x400.jpg',
+    slide6: './images/hb20Traz600x400.jpg',
+    thumb1: './images/hb20frente600x400.jpg',
+    thumb2: './images/hb20Painel600x400.jpg',
+    thumb3: './images/hb20LatDir600x400.jpg',
+    thumb4: './images/hb20moto600x400.jpg',
+    thumb5: './images/hb20RodaE600x400.jpg',
+    thumb6: './images/hb20Traz600x400.jpg'
 }
 
 let veiculoSelecionado = sessionStorage.getItem('carro')
