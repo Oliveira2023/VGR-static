@@ -1,4 +1,4 @@
-let veiculo3 = {
+let veiculo2 = {
     nome: 'Ford New Fiesta Hatch 2020',
     km: "38.531",
     local: "São Paulo",
@@ -21,7 +21,7 @@ let veiculo3 = {
     thumb6: '/images/fiesta-trazeira.jpg'
 }
 
-let veiculo2 = {
+let veiculo1 = {
     nome: 'Hyundai HB20 EVOLUTION',
     km: "38.531",
     local: "São Paulo",

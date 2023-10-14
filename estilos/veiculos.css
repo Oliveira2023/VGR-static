@@ -18,6 +18,19 @@ color: #F7941D;
     gap: 8px;
     justify-content: center;
 }
+.descrip{
+    padding: 0px;
+    border-radius: 10px;
+}
+#grade-veiculos div > p {
+    border-radius: 0px;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    color: rgb(59, 59, 59);
+}
 /* .galery { */
     /* width: 250px; */
 /* } */
@@ -26,17 +39,7 @@ color: #F7941D;
     width: 100%;
     height: auto;
     cursor: pointer;
-    }
-
-#grade-veiculos div > p {
-    border-radius: 0px;
-    margin-top: -10px;
-    padding: 10px;
     
-    font-weight: bold;
-    font-size: 10px;
-    background-color: white;
-    color: rgb(59, 59, 59);
 }
 #grade-veiculos div > p >b {
     font-size: medium;
