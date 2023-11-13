@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGR veículos</title>
+    <!-- <link rel="stylesheet" href="./estilos/style.css"> -->
+    <link rel="stylesheet" href="./estilos/header.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/mobile-home.css">
+    <link rel="icon" href="./images/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        @font-face {
+            font-family: vgr;
+            src: url(../Fontes/starduster2expandital.ttf) format('opentype');
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
+
+        *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+            background-color:rgb(56, 56, 56);
+        }
+        .vgr{
+            font-family: vgr;
+            color: #F7941D;
+        }
+        #text-maps{
+            color: #F7941D;
+            text-align: center;
+            margin: 15px auto 0 auto;
+        }
+        
+        #maps{
+            margin: 0 auto;
+            width: 100%;
+            padding: 0px;
+        }
+        #maps iframe{
+            width: 100%;
+            height: 550px;
+            padding: 20px;
+        }
+        #sabia{
+            display: none;
+        }
+        @media only screen and (max-width: 768px){
+            #maps{
+                width: 90%;
+                height: auto;
+            }
+            #maps iframe{
+            width: 100%;
+            height: auto;
+        }
+        }
+
+    </style>
+</head>
+<body onresize="setDisplay()">
+    
+    <header>
+        <div id="mobile-nav">
+            <span id="menuIcon" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+            <h1><span class="vgr">VGR</span>&nbsp  &nbspVeículos - Localização</h1>
+                <hr id="hr">
+        </div>
+        
+        <nav id="menuList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="veiculos.html">Veículos</a></li>
+                <li><a href="ficha.html">Ficha Compra/Venda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <h1>Navegue até a loja</h1> -->
+    <p id="text-maps">Estamos a 1 minuto saindo da Fernão Dias</p>
+    <div id="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.0248846607474!2d-46.57512142562859!3d-23.45956685785845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f2adc6f8551%3A0xb6026ac8561953dc!2sVGR%20Multimarcas!5e0!3m2!1spt-BR!2sbr!4v1684377872289!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <div id="sabia">
+        <h2>Você sabia?</h2>
+        <p>
+            Veículo é uma máquina que transporta pessoas ou carga. Os veículos incluem bicicletas, veículos motorizados, veículos sobre trilhos, embarcações, veículos anfíbios, aeronaves e espaçonaves.
+        </p>
+    </div>
+    
+    </section>
+    <section id="secao3">
+        <div class="visite">
+            <h2>Visite-nos</h2>
+            <p>Venha conhecer nossa loja.</p>
+            <p>Rua Abilio Pedro Ramos, 923 - Vila Nilo - São Paulo-SP, 02279-000</p>
+            <p><span class="material-symbols-outlined">
+                phone_in_talk
+                </span> (11) 2023-2715</p>
+            <p><img src="#" alt="">(11) 2638-3928</p>
+            <p><img src="#" alt="">(11) 95328-0431</p>
+        </div>
+        <div class="visite" id="destk-home">
+            
+            <h2>Você sabia?</h2>
+            <p>
+                Veículo é uma máquina que transporta pessoas ou carga. Os veículos incluem bicicletas, veículos motorizados, veículos sobre trilhos, embarcações, veículos anfíbios, aeronaves e espaçonaves.
+            </p>
+        </div>
+            
+        <div id="redes" class="visite">
+            <h2>Redes Sociais</h2>
+            <div id="link-redes">
+                <a target="_blank" href="https://www.instagram.com/veiculosvgr/"><img src="./images/instagram-40P.png" alt=""></a>
+                <a class="testerede" target="_blank" href="https://www.facebook.com/vgrmultimarcas"><img id="imgface" src="./images/facebook-13P.png" alt="facebook icone"></a>
+                <a target="_blank" href="https://wa.me/5511963591532"><img src="./images/whatsapp-33P.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <nav><a href="index.html">Home</a></nav>
+    <div id="rdape">Vgr Multimarcas Veiculos Ltda - CNPJ: 19.257.804/0001-07</div>
+</footer>
+<script src="./scripts/menuFuncions.js"></script>
+</body>
+</html>

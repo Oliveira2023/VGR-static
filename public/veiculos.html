@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiculos</title>
+    <link rel="stylesheet" href="./estilos/header.css">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/veiculos.css">
+    <link rel="stylesheet" href="./estilos/mobile-home.css">
+    <!-- <link rel="stylesheet" href="estilos/mobile-home.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
+    
+    <link rel="icon" href="images/favicon2.ico" type="image/x-icon">
+
+<body onresize="setDisplay()">
+
+    <header>
+        <div id="mobile-nav">
+            <span id="menuIcon" class="material-symbols-outlined" onclick="menuClick()">menu</span>
+            <h1><span class="vgr">VGR</span>&nbsp &nbsp Veículos</h1>
+                <hr id="hr">
+        </div>
+        
+        <nav id="menuList">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="veiculos.html">Veículos</a></li>
+                <li><a href="ficha.html">Ficha Compra/Venda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="h1encontre">Encontre seu carro aqui!</h1>
+
+    <section id="grade-veiculos">
+        
+        <!--  -->
+    </section>
+
+<section id="secao3">
+    <div class="visite">
+        <h2>Visite-nos</h2>
+        <p>Venha conhecer nossa loja.</p>
+        <p>Rua Abilio Pedro Ramos, 923 - Vila Nilo - São Paulo-SP, 02279-000</p>
+        <p><span class="material-symbols-outlined">
+            phone_in_talk
+            </span> (11) 2023-2715</p>
+        <p><img src="#" alt="">(11) 2638-3928</p>
+        <p><img src="#" alt="">(11) 95328-0431</p>
+    </div>
+    <div class="visite" id="destk-home">
+        <h2>Saiba Mais</h2>
+        <p>
+            Veículo é uma máquina que transporta pessoas ou carga. Os veículos incluem bicicletas, veículos motorizados, veículos sobre trilhos, embarcações, veículos anfíbios, aeronaves e espaçonaves.
+        </p>
+    </div>
+    <div id="redes" class="visite">
+        <h2>Redes Sociais</h2>
+        <div id="link-redes">
+            <a target="_blank" href="https://www.instagram.com/veiculosvgr/"><img src="./images/instagram-40P.png" alt=""></a>
+            <a class="testerede" target="_blank" href="https://www.facebook.com/vgrmultimarcas"><img id="imgface" src="./images/facebook-13P.png" alt="facebook icone"></a>
+            <a target="_blank" href="https://wa.me/5511963591532"><img src="./images/whatsapp-33P.png" alt=""></a>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav><a href="index.html">Home</a></nav>
+    <div id="rdape">Vgr Multimarcas Veiculos Ltda - CNPJ: 19.257.804/0001-07</div>
+</footer>
+<button id="myBtn" title="Go to top">Top</button>
+<script src="./scripts/menuFuncions.js"></script>
+
+<script src="./scripts/car.js"></script>
+<script>
+    var mybutton = document.getElementById("myBtn")
+    window.onscroll = function(){
+    scrollFunction()
+}
+function scrollFunction(){
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600){
+        mybutton.style.display = "block"
+    }else{
+        mybutton.style.display = "none"
+    }
+}
+mybutton.onclick = function(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

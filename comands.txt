@@ -1,0 +1,4 @@
+firebase:
+firebase deploy --only hosting // para implementar alterações no site
+firebase hosting:channel:list // lista a lista dos canais disponíveis para acesso do site
+deploy CHANNEL_ID // cria um canal temporário para ver o site. (para listar acima)

@@ -1,0 +1,36 @@
+#mobile-nav {
+    display: none;
+}
+
+#menuList {
+    background-color: black;
+    display: block;
+}
+#hr {
+    display: none;
+}
+#menuList ul{
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+    
+}
+#menuList ul li{
+    display: inline;
+    padding: 10px;
+    
+}
+#menuList ul li a {
+    font-family: 'Bruno Ace SC';
+    color: rgb(227, 237, 226);
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+    border-radius: 10px;
+    /* background-color: rgba(128, 128, 128, 0.432); */
+}
+#menuList ul li a:hover {
+    background-color: rgb(71, 112, 201);
+    border-radius: 10px;
+}
