@@ -1,3 +1,14 @@
+// import { getDatabase, ref, onValue } from "firebase/database";
+
+// const db = getDatabase();
+// const objetoCarro = ref(db, 'veiculo1' + '/nome');
+// onValue(objetoCarro, (snapshot) => {
+//   const data = snapshot.val();
+//   updateObjetoCarro(postElement, data);
+//   console.log(data);
+// });
+
+
 var carro = ''
 
 function cardetails(car){
@@ -14,7 +25,7 @@ let estoque = [
         cambioKM: 'Automatico 72.085km',
         preco: 'R$ 35.000,00',
         corte_preco: 'R$ 40.000,00',
-        img: './images/bmw20-378.png'
+        img: './images/hrv1-378x278.jpg'
     },
     {
         nome: 'HB20 HYUNDAI',
